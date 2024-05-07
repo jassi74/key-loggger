@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Logger</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #wallpaper{
+            margin-top: 10px;
+        }
+        #imagegoogle{
+            margin-top: 2px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+           
+        }
+        #log,#state{
+            width: 500px;
+            height: 50px;
+            padding: 5px;
+            border: 1px solid black;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            background-color: #ffa500;
+            border-radius: 10px;
+            margin-right: 3px;
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row;
+        }
+        button{
+            font-size: 20px;
+            padding: 10px,20px;
+            margin-top: 20px;
+            margin-right: 3px;
+            cursor: pointer; 
+            
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div id="imagegoogle"> <img src="https://i.pinimg.com/736x/4b/10/b7/4b10b73b24c14c78f9c30f37bedfd742.jpg" alt="image of google" width="400px" >
+    </div>     <h1 style="color: white; border:2px solid rgba(255, 255, 255, 0.577); padding:4px; ; border-radius: 10px ;">KeyLogger</h1>
+     <p style="color: antiquewhite;">Its jassi here.Satsriskal gg, Goood Morning</p>
+     <div class="startstop">
+        
+        <button id="start-btn">Start logging Keypresses</button>
+        <button id="stop-btn">Stop logging Keypresses</button>
+     </div>
+     
+     <div class="button-container">
+        <div id="log"></div>
+        <div id="state"> </div>
+     </div>
+     
+     <div id="wallpaper" style="margin-top: 2px;"><img src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="wallpaper" width="1000px" ></div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
